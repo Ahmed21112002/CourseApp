@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CourseApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="startText1">Ready to start your learning journey ?</string>
+    <string name="startText2">Get one step closer to your goal everyday</string>
+    <string name="statBtn">Get Started</string>
+
+    <string name="loginText1">Log In</string>
+    <string name="loginEditText1">E-mail</string>
+
+    <string name="featured">Featured</string>
+    <string name="search">Search</string>
+    <string name="learn">Learn</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="profile">Profile</string>
+</resources>
