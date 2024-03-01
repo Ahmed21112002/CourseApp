@@ -4,6 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black00">#020202</color>
     <color name="bluebk">#396AB1</color>
-    <color name="blue">#0056D2</color>
     <color name="Hint">#88000000</color>
+    <color name="home">#396AB1</color>
+    <color name="blue">#0056D2</color>
+    <color name="red">#BD0000</color>
+    <color name="gray">#020202</color>
 </resources>

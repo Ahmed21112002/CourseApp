@@ -4,10 +4,25 @@
 
     <string name="startText1">Ready to start your learning journey ?</string>
     <string name="startText2">Get one step closer to your goal everyday</string>
-    <string name="statBtn">Get Started</string>
+    <string name="startBtn">Get Started</string>
 
-    <string name="loginText1">Log In</string>
-    <string name="loginEditText1">E-mail</string>
+    <string name="loginText1">Log in</string>
+    <string name="loginText2">Welcome</string>
+    <string name="loginText3">Please Login with your information</string>
+    <string name="loginText4">Email Address</string>
+    <string name="loginText5">Password</string>
+    <string name="loginText6">Remember me</string>
+    <string name="loginText7">Forgot Password?</string>
+    <string name="loginText8">New here?</string>
+    <string name="loginText9">Create an account</string>
+
+    <string name="signupText1">Create Account</string>
+    <string name="signupText2">Fill in your information below</string>
+    <string name="signupText3">Full Name</string>
+    <string name="signupText4">Have An Account?</string>
+
+    <string name="googleBtn">Continue with Google</string>
+    <string name="fbBtn">Continue with Facebook</string>
 
     <string name="featured">Featured</string>
     <string name="search">Search</string>

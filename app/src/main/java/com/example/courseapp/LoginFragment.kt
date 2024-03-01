@@ -6,13 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.courseapp.databinding.FragmentStartBinding
+import com.example.courseapp.databinding.FragmentLoginBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class StartFragment : Fragment() {
+class LoginFragment : Fragment() {
 
-    private lateinit var binding: FragmentStartBinding
+    private lateinit var binding: FragmentLoginBinding
     private lateinit var bottomNavigationView : BottomNavigationView
 
     override fun onCreateView(
@@ -20,15 +20,18 @@ class StartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentStartBinding.inflate(layoutInflater,container,false)
-        initviews()
+        binding = FragmentLoginBinding.inflate(layoutInflater,container,false)
+        initview()
         return binding.root
     }
 
-    private fun initviews() {
+    private fun initview() {
         bottomNavigationView = requireActivity().findViewById<BottomNavigationView>(R.id.btn_bar)
-        binding.GetStartedBtn.setOnClickListener{
-            findNavController().navigate(R.id.nav_to_login)
+        binding.loginBtn.setOnClickListener {
+            findNavController().navigate(R.id.nav_to_home)
+        }
+        binding.CreateAccText.setOnClickListener{
+            findNavController().navigate(R.id.nav_to_signup)
         }
     }
 
@@ -41,4 +44,5 @@ class StartFragment : Fragment() {
         super.onStop()
         bottomNavigationView.visibility = View.VISIBLE
     }
+
 }
