@@ -14,6 +14,7 @@ class StartFragment : Fragment() {
 
     private lateinit var binding: FragmentStartBinding
     private lateinit var bottomNavigationView : BottomNavigationView
+    private lateinit var topNavView : View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +27,7 @@ class StartFragment : Fragment() {
     }
 
     private fun initviews() {
+        topNavView = requireActivity().findViewById(R.id.top_bar)
         bottomNavigationView = requireActivity().findViewById<BottomNavigationView>(R.id.btn_bar)
         binding.GetStartedBtn.setOnClickListener{
             findNavController().navigate(R.id.nav_to_login)
@@ -34,11 +36,13 @@ class StartFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        topNavView.visibility = View.GONE
         bottomNavigationView.visibility = View.GONE
     }
 
     override fun onStop() {
         super.onStop()
+        topNavView.visibility = View.VISIBLE
         bottomNavigationView.visibility = View.VISIBLE
     }
 }

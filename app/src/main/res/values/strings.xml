@@ -16,7 +16,7 @@
     <string name="loginText8">New here?</string>
     <string name="loginText9">Create an account</string>
 
-    <string name="signupText1">Create Account</string>
+    <string name="signupText1">Sign Up</string>
     <string name="signupText2">Fill in your information below</string>
     <string name="signupText3">Full Name</string>
     <string name="signupText4">Have An Account?</string>
@@ -24,7 +24,7 @@
     <string name="googleBtn">Continue with Google</string>
     <string name="fbBtn">Continue with Facebook</string>
 
-    <string name="featured">Featured</string>
+    <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="learn">Learn</string>
     <string name="bookmarks">Bookmarks</string>
