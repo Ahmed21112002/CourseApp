@@ -1,4 +1,4 @@
-package com.example.courseapp
+package com.example.courseapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,30 +6,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.courseapp.databinding.FragmentStartBinding
+import com.example.courseapp.R
+import com.example.courseapp.databinding.FragmentSignupBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class StartFragment : Fragment() {
+class SignupFragment : Fragment() {
 
-    private lateinit var binding: FragmentStartBinding
-    private lateinit var bottomNavigationView : BottomNavigationView
-    private lateinit var topNavView : View
+    private lateinit var binding: FragmentSignupBinding
+    private lateinit var bottomNavigationView: BottomNavigationView
+    private lateinit var topNavView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentStartBinding.inflate(layoutInflater,container,false)
-        initviews()
+        binding = FragmentSignupBinding.inflate(layoutInflater,container,false)
+        initview()
         return binding.root
     }
 
-    private fun initviews() {
+    private fun initview() {
         topNavView = requireActivity().findViewById(R.id.top_bar)
         bottomNavigationView = requireActivity().findViewById<BottomNavigationView>(R.id.btn_bar)
-        binding.GetStartedBtn.setOnClickListener{
+        binding.signupBtn.setOnClickListener {
+            findNavController().navigate(R.id.nav_to_home)
+        }
+        binding.loginText.setOnClickListener {
             findNavController().navigate(R.id.nav_to_login)
         }
     }
@@ -45,4 +49,5 @@ class StartFragment : Fragment() {
         topNavView.visibility = View.VISIBLE
         bottomNavigationView.visibility = View.VISIBLE
     }
+
 }

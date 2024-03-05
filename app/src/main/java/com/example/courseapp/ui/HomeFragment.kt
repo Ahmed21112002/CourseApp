@@ -1,10 +1,11 @@
-package com.example.courseapp
+package com.example.courseapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.courseapp.MainActivity
 import com.example.courseapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -22,7 +23,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun initview() {
-
+        (requireActivity() as MainActivity).toolbarTextView.text = "Home"
     }
 
 }

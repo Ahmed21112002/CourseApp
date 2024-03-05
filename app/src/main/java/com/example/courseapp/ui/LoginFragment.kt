@@ -1,4 +1,4 @@
-package com.example.courseapp
+package com.example.courseapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,14 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.courseapp.databinding.FragmentSignupBinding
+import com.example.courseapp.R
+import com.example.courseapp.databinding.FragmentLoginBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class SignupFragment : Fragment() {
+class LoginFragment : Fragment() {
 
-    private lateinit var binding: FragmentSignupBinding
-    private lateinit var bottomNavigationView: BottomNavigationView
+    private lateinit var binding: FragmentLoginBinding
+    private lateinit var bottomNavigationView : BottomNavigationView
     private lateinit var topNavView: View
 
     override fun onCreateView(
@@ -21,7 +22,7 @@ class SignupFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSignupBinding.inflate(layoutInflater,container,false)
+        binding = FragmentLoginBinding.inflate(layoutInflater,container,false)
         initview()
         return binding.root
     }
@@ -29,11 +30,11 @@ class SignupFragment : Fragment() {
     private fun initview() {
         topNavView = requireActivity().findViewById(R.id.top_bar)
         bottomNavigationView = requireActivity().findViewById<BottomNavigationView>(R.id.btn_bar)
-        binding.signupBtn.setOnClickListener {
+        binding.loginBtn.setOnClickListener {
             findNavController().navigate(R.id.nav_to_home)
         }
-        binding.loginText.setOnClickListener {
-            findNavController().navigate(R.id.nav_to_login)
+        binding.CreateAccText.setOnClickListener{
+            findNavController().navigate(R.id.nav_to_signup)
         }
     }
 

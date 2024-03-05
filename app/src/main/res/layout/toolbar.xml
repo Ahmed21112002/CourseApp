@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/home"
+                android:textColor="@color/black"
                 android:textSize="20dp"
                 android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
